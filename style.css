@@ -92,7 +92,7 @@ span{
     background-color: #23b5763f;
 }
 .card2{
-    box-shadow: grey 4px 5px 12px 7px;
+    box-shadow: grey 3px 10px 17px 2px;
 }
 .card1 h2{
     margin-bottom: -8px;
@@ -129,7 +129,7 @@ span{
     box-shadow: grey 5px 5px 30px 0px;
     border: none;
     margin: 20px 30px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     padding: 15px 20px 5px 20px;
 }
@@ -161,4 +161,35 @@ span{
 .crse-dtl img{
     width: 20px;
 }
-
+                                        /* SECTION-5 */
+.main-sec-5{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.main-sec-5 h1{
+    text-align: center;
+}
+.sxth-sec{
+    display: flex;
+    height: 50px;
+}
+.sxth-sec img{
+    width: 50%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(9, 19, 34, 0.842);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.fourty-width{
+    width: 40%;
+}
+.twnty-width{
+    width: 20%;
+}
