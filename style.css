@@ -23,12 +23,17 @@ nav li{
     display: inline;
     margin: 0px 15px;
 }
+.green-btn:hover{
+    transform: scale(1.02);
+    transition: transform 0.5s;
+}
 
                                 /* SECTION-2 */
 .container{
     height: 350px;
     display: flex;
     justify-content: center;
+    border: 2px solid;
     background-color: #23b57649;
     padding-bottom: 20px;
     margin-bottom: 30px;
@@ -88,11 +93,14 @@ span{
 .card1 img{
     width: 100px;
 }
-.card1, .card3, .card4{
+.card{
     background-color: #23b5763f;
 }
-.card2{
+.card:hover{
     box-shadow: grey 3px 10px 17px 2px;
+    background-color: white;
+    transition: box-shadow 1s;
+    transition: background-color 1s;
 }
 .card1 h2{
     margin-bottom: -8px;
@@ -126,12 +134,16 @@ span{
 }
 .cardy{
     width: 24%;
-    box-shadow: grey 5px 5px 30px 0px;
     border: none;
+    box-shadow: grey 5px 5px 30px 0px;
     margin: 20px 30px;
     border-radius: 5px;
-    border: none;
     padding: 15px 20px 5px 20px;
+}
+.cardy:hover{
+    box-shadow: grey 0px 0px 00px 0px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    transition: box-shadow 1s;
 }
 .cardy-body, .cardy-detail{
     width: 100%;
@@ -192,4 +204,59 @@ footer{
 }
 .twnty-width{
     width: 20%;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+                                        /* MEDIA-QUERY */
+
+@media (max-width: 480px){
+                                        /* section-2 */
+    .container{
+        height: 650px;
+        width: 100%;
+        
+    }
+    .main-sec-2{
+        display: block;
+        width: 100%;
+    }
+    .snd-sec{
+        width: 85%;
+    }
+    .snd-sec h1{
+        font-size: 36px;
+    }
+    .snd-sec br{
+        display: none;
+    }
+                                        /* SECTION-3 */
+    .main-sec-3{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        width: 35%;
+        margin-bottom: 20px;
+    }
+                                        /* SECTION-4 */
+    .main-sec-4{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .cardy{
+        width: 45%;
+    }
+    .fth-sec{
+        display: block;
+        text-align: center;
+        width: 170%;
+    }
+    .crse-dtl{
+        display: block;
+        margin: 10px 0px;
+    }
 }
