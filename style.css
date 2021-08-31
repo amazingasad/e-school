@@ -37,7 +37,8 @@ nav li a:hover{
 
                                 /* SECTION-2 */
 .container{
-    height: 350px;
+    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #23b57649;
@@ -47,6 +48,8 @@ nav li a:hover{
 .main-sec-2{
     width: 80%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .snd-sec{
     width: 50%;
@@ -89,6 +92,7 @@ span{
     padding: 20px 2% 0px 2%;
     text-align: center;
     border-radius: 13px;
+    background-color: #23b5763f;
 }
 .card-body{
     width: 80%;
@@ -96,12 +100,7 @@ span{
 .main-sec-3 .card .card-body img{
     width: 100%;
 }
-.card1 img{
-    width: 100px;
-}
-.card{
-    background-color: #23b5763f;
-}
+
 .card:hover{
     box-shadow: rgba(128, 128, 128, 0.363) 0px 4px 8px 0px;
     background-color: white;
@@ -185,14 +184,15 @@ span{
     margin: auto;
     width: 60%;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .main-sec-5 h1{
     text-align: center;
 }
 .sxth-sec{
     display: flex;
-    height: 50px;
+    height: auto;
+
 }
 .sxth-sec img{
     width: 50%;
@@ -225,10 +225,12 @@ footer a{
 
                                         /* MEDIA-QUERY */
 
-@media (max-width: 480px){
+                                        /* MOBLE-VERSION */
+
+@media (max-width: 468px){
                                         /* section-2 */
     .container{
-        height: 650px;
+        height: auto;
         width: 100%;
         
     }
@@ -283,6 +285,9 @@ footer a{
     .sxth-sec img{
         width: 60%;
     }
+    .main-sec-5{
+        height: 330px;
+    }
                                             /* FOOTER */
     footer{
         display: inline-flex;
@@ -294,6 +299,48 @@ footer a{
     }
     
     .twnty-width{
+        width: 30%;
+    }
+}
+                                    /* MOBILE LANDSCAPE MODE */
+@media (min-width: 469px) and (max-width:767px){
+
+    .container{
+        height: auto;
+    }
+    .snd-sec br{
+        display: none;
+    }
+    .snd-sec img{
+        width: 150%;
+        height: auto;
+    }
+    .card{
+        width: 35%;
+        margin-bottom: 20px;
+    }
+    .main-sec-3{
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-sec-3 .card .card-body img{
+        width: 70%;
+    }
+    .cardy{
+        width: 45%;
+    }
+    .fth-sec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sxth-sec{
+        display: block;
+        text-align: center;
+        
+    }
+      
+    .sxth-sec img{
         width: 30%;
     }
 }
