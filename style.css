@@ -227,7 +227,7 @@ footer a{
 
                                         /* MOBLE-VERSION */
 
-@media (max-width: 468px){
+@media (max-width: 689px){
                                         /* section-2 */
     .container{
         height: auto;
@@ -261,6 +261,7 @@ footer a{
         width: 100%;
         display: block;
         margin: auto;
+        overflow: hidden;
     }
     .cardy{
         width: 45%;
@@ -302,8 +303,8 @@ footer a{
         width: 30%;
     }
 }
-                                    /* MOBILE LANDSCAPE MODE */
-@media (min-width: 469px) and (max-width:767px){
+                                    /* TABLET MODE */
+@media (min-width: 689px) and (max-width:787px){
 
     .container{
         height: auto;
